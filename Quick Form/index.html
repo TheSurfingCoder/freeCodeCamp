@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">What would you like to do, King Moose, this weekend?</h1>
+    <p id="description">Thank you for taking the time to complete my survey.</p>
+
+    <form id="survey-form" method="post" action="">
+        <fieldset> 
+            <label for="name" id="name-label">Enter Your First Name: 
+                <input type="text" placeholder="First Name" name="first-name" id="name" required />
+            </label>
+            <label for="last-name">Enter Your Last Name: 
+                <input type="text" placeholder="Last Name" name="last-name" id="last-name" required />
+            </label>
+            <label for="email" id="email-label">Email: 
+                <input type="email" placeholder="example@email.com" id="email" name="email" required />
+            </label>
+            <label for="number" id="number-label">Number: 
+                <input type="number" placeholder="10" id="number" name="number" min="10" max="20" />
+            </label>
+        </fieldset>
+
+        <fieldset>  
+            <label>
+                <select id="dropdown" name="dropdown">
+                    <option value="doggy park">Doggy Park</option>
+                    <option value="go to a restaurant">Go to a Restaurant</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="daytime">
+                <input id="daytime" type="radio" name="timeofday" value="daytime" /> Daytime
+            </label>
+            <label for="nighttime">
+                <input id="nighttime" type="radio" name="timeofday" value="nighttime" /> Nighttime
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <input type="checkbox" name="timeslot" value="1-2pm" /> 1-2 PM
+            </label>
+            <label>
+                <input type="checkbox" name="timeslot" value="2-4pm" /> 2-4 PM
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
