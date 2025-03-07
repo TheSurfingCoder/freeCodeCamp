@@ -1,0 +1,112 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #6a4c9c; /* Soft purple background */
+    color: #f5f6f7; /* Light text for good contrast */
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+    color: #f39c12; /* Soft yellow-orange for header */
+}
+
+section {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #34495e; /* Dark grey-blue section background */
+    border-radius: 10px; /* Rounded corners for the section */
+    padding: 2rem;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #7f8c8d; /* Light grey border for horizontal rule */
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.to-do-item1 {
+    background-color: #f1c40f; /* Warm yellow for to-do items */
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 8px; /* Rounded corners for each to-do item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.to-do-item2 {
+    background-color: #f1c40f; /* Warm yellow for to-do items */
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 8px; /* Rounded corners for each to-do item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.to-do-item3 {
+    background-color: #f1c40f; /* Warm yellow for to-do items */
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 8px; /* Rounded corners for each to-do item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.to-do-item4 {
+    background-color: #f1c40f; /* Warm yellow for to-do items */
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 8px; /* Rounded corners for each to-do item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+
+
+
+.sub-item {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9; /* Blue links for clarity */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #16a085; /* Soft teal hover effect for links */
+}
+
+a:active {
+    color: #27ae60; /* Green active state for links */
+}
+
+a:focus {
+    outline: 2px solid #2980b9; /* Blue outline for accessibility */
+    outline-offset: 2px;
+}
+
+a:visited {
+    color: #8e44ad; /* Purple visited links */
+}
