@@ -1,16 +1,30 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Palindrome Checker</title>
+</head>
 
-  <head>
-    <meta charset = "UTF-8"/>
-    <meta name ="viewport"/>
-    <link href= "styles.css" rel ="stylesheet"/>
-  </head>
-  <body>
+<body>
     <main>
-      <h2>freeCodeCamp</h2>
-      <h1> Is it a Palindrome?</h2>
-      <input type = "text" placeholder="Enter Something"id="text-input"></input>
-      <button id="check-btn">Check</check>
-    </body>
+        <h2>freeCodeCamp</h2>
+        <h1>Is it a Palindrome?</h1>
+
+        <label for="text-input">Enter Palindrome Here:</label>
+        <input id="text-input" placeholder="Insert here">
+
+        <button type="button" id="check-btn">Check</button>
+        <p id="error-message" class="error"></p>
+
+        <hr>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
