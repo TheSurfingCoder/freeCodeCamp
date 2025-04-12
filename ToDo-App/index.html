@@ -12,16 +12,22 @@
 <body>
   <main>
     <h1>Todo App</h1>
-    <div class="todo-app">
+    <div class="todo-app"> <!-- this is main div-->
+      <!-- button element goes at the top. It has a event listener in script.js-->
       <button id="open-task-form-btn" class="btn large-btn">
         Add New Task
       </button>
+      <!-- here's the task form element. it is completely hidden via hidden class and is compromised 
+of three parts: the header, body, and footer. -->
+
       <form class="task-form hidden" id="task-form">
+<!-- here is the task form header. There is a close button and a close icon-->
         <div class="task-form-header">
           <button id="close-task-form-btn" class="close-task-form-btn" type="button" aria-label="close">
             <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" /><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" /></svg>
           </button>
         </div>
+      <!-- here is the actual task form body. There are inputs here-->
         <div class="task-form-body">
           <label class="task-form-label" for="title-input">Title</label>
           <input required type="text" class="form-control" id="title-input" value="" />
@@ -30,12 +36,19 @@
           <label class="task-form-label" for="description-input">Description</label>
           <textarea class="form-control" id="description-input" cols="30" rows="5"></textarea>
         </div>
+        <!-- here is the  task form footer where you can submit your task-->
+
         <div class="task-form-footer">
           <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
             Add Task
           </button>
         </div>
       </form>
+
+      <!-- here is the end of the end of the to-do form element-->
+
+      <!-- this is a dialog container-->
+
       <dialog id="confirm-close-dialog">
         <form method="dialog">
           <p class="discard-message-text">Discard unsaved changes?</p>
@@ -49,6 +62,8 @@
           </div>
         </form>
       </dialog>
+
+      <!-- this is where we actually print the tasks. it's below  -->
       <div id="tasks-container"></div>
     </div>
   </main>
